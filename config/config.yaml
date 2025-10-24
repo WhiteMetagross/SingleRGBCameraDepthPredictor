@@ -1,0 +1,72 @@
+calibration:
+  bonnet_center_pixel:
+    x: 1068
+    y: 993
+  bonnet_center_ratio:
+    x: 0.55625
+    y: 0.9194444444444444
+  bonnet_depth_reference: 0.7254902124404907
+  calibration_method: manual_point_selection
+  enabled: true
+  max_frames_without_detection: 30
+  min_bonnet_area: 1000
+  reference_distance: 1.35
+  temporal_smoothing: 20
+depth:
+  calibration:
+    confidence_threshold: 0.25
+    invert_depth: true
+    max_depth: 100.0
+    min_depth: 0.5
+    outlier_std_threshold: 2.5
+  device: cuda
+  input_size: 392
+  model_type: vitl
+distance:
+  use_center: true
+  use_median: false
+distance_validation:
+  enabled: true
+  max_distance: 100.0
+  min_distance: 0.5
+  outlier_threshold: 2.0
+  spatial_smoothing: true
+  temporal_smoothing:
+    enabled: true
+    smoothing_factor: 0.7
+    window_size: 5
+logging:
+  level: INFO
+  log_file: logs/pipeline.log
+paths:
+  depth_model: data/models/depth_anything_v2_vitl.pth
+  input_video: ''
+  models_dir: data/models
+  output_dir: outputs
+  reid_config: data/configs/veriwild_r50_ibn_config.yml
+  reid_model: data/checkpoints/veriwild_bot_R50-ibn.pth
+  yolo_model: data/models/IDDDYOLO11m.pt
+tracking:
+  enabled: true
+  iou_threshold: 0.3
+  max_disappeared: 60
+  min_hits: 3
+  use_reid: true
+video:
+  max_frames: null
+  output_codec: mp4v
+  output_fps: 30
+  skip_frames: 1
+visualization:
+  depth_colormap: turbo
+  distance_unit: m
+  draw_bbox: true
+  draw_depth_map: true
+  draw_distance: true
+  font_scale: 0.7
+  thickness: 2
+yolo:
+  confidence_threshold: 0.25
+  device: cuda
+  imgsz: 640
+  iou_threshold: 0.45

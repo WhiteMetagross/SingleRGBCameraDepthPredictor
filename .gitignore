@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+SingleRGBCameraDepthPredictor/
+
+# Models and checkpoints
+data/models/*.pth
+data/models/*.pt
+data/checkpoints/*.pth
+Depth-Anything-V2/checkpoints/*.pth
+
+# Outputs and logs
+outputs/*.mp4
+outputs1/*.mp4
+logs/*.log
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+
+# OS-generated
+.DS_Store
+Thumbs.db
+
+# Misc
+*.tmp
+*.bak
+# Stale malformed folder created by past runs (safe to ignore)
+UsersXeronOneDriveDocumentsProgramsSingleRGBCameraDepthPredictoroutputs1/
+

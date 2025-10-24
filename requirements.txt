@@ -1,0 +1,32 @@
+# YOLO + DepthAnything V2 Requirements
+# Python 3.11, CUDA 12.1
+
+# Core dependencies
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# Object Detection
+ultralytics>=8.0.0
+
+# Depth Estimation (will be cloned from GitHub)
+# DepthAnything V2 - see Depth-Anything-V2 folder
+
+# Computer Vision
+opencv-python>=4.8.0
+opencv-contrib-python>=4.8.0
+
+# Utilities
+numpy>=1.24.0
+pyyaml>=6.0
+tqdm>=4.65.0
+Pillow>=9.5.0
+
+# Optional: For better performance
+timm>=0.9.0
+
+# GUI and Tracking
+PySide6>=6.0.0
+filterpy>=1.4.2
+faiss-cpu>=1.7.0
+
