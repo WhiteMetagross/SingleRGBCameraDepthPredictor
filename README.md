@@ -1,6 +1,6 @@
-# YOLO + DepthAnything V2: Precise Object Distances Without LiDAR:
+# SingleRGBCameraDepthPredictor: Precise Object Distances Without LiDAR:
 
-A comprehensive system for real-time vehicle detection and distance estimation using a single RGB camera, combining Ultralytics YOLO for object detection with DepthAnything V2 for monocular depth estimation.
+A system for real-time vehicle detection and distance estimation using a single RGB camera, combining Ultralytics YOLO for object detection with DepthAnything V2 for monocular depth estimation.
 
 ## Project Overview:
 
